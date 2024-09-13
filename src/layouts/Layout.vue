@@ -127,12 +127,14 @@
             <font-awesome-icon icon="times" />
         </button>
     </div>
+    <SpeedInsights />
 </template>
 
 <script>
 import Login from "../components/Login.vue";
 import compareVersions from "compare-versions";
 import { useToast } from "vue-toastification";
+import { SpeedInsights } from '@vercel/speed-insights/vue';
 const toast = useToast();
 
 export default {
